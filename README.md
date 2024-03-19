@@ -1,1 +1,1 @@
-A marketing website for eMindGuard
+eMindGuard
