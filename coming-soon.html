@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Launching Soon</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  .coming-soon-container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex; /* Use flex layout to center the image vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+  }
+  .coming-soon-image {
+    max-width: 100%; /* Ensure the image is not wider than the screen */
+    max-height: 100vh; /* Ensure the image is not taller than the viewport */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Optional shadow for styling */
+    border-radius: 15px; /* Rounded corners */
+  }
+</style>
+</head>
+<body>
+
+<section class="coming-soon-section">
+  <div class="coming-soon-container">
+    <img src="images/soon.png" alt="App Launching Soon" class="coming-soon-image img-fluid">
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

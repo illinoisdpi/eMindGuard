@@ -1,0 +1,276 @@
+/* Add this to your existing styles.css file */
+
+html, body {
+    height: 100%; /* Ensure the html and body fill the height of the viewport */
+    margin: 0; /* Reset default margins */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .content {
+    flex: 1; /* The content will expand to fill available space, pushing the footer down */
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+
+  .footer-section {
+    margin-top: auto; /* Pushes the footer to the bottom */
+  }
+  
+
+body {
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #202024 !important; /* Changed to black */
+}
+
+.navbar .navbar-brand, .navbar .navbar-nav .nav-link {
+    color: #FFF; /* Changed to white */
+}
+
+.navbar-brand {
+    font-size: larger;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #AAA; /* Light gray for hover, adjust as needed */
+}
+ 
+ 
+  
+
+/* About Page Styles */
+/* Additional Global Styles */
+
+/* Base styles for the about page */
+.about-section {
+    background-color: #f0f4f8;
+    padding: 4rem 0;
+  }
+  
+  .section-title {
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .section-intro p, .feature p {
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 2rem;
+  }
+
+  .section-title:after {
+    content: '';
+    display: block;
+    border-top: 2px solid #b4b4b4; /* The color of the underline */
+    width: 95%; /* Width of the underline */
+    margin: 0.3rem auto 1rem; /* Top margin, auto for horizontal centering, and bottom margin */
+  }
+  
+  /* Similarly for the team section if you have an h2 tag for the team title */
+  .team-section h2:after {
+    content: '';
+    display: block;
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin: 0.3rem auto 1rem;
+    margin-bottom: 50px;
+  }
+  
+
+
+/* Continuing from the previous CSS */
+
+.team-section {
+    background-color: #f0f4f8;
+    color: #333;
+    padding-bottom: 0; /* Removes extra space at the bottom */
+    overflow: hidden;
+  }
+  
+  .team-section h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem; /* Adjust as needed */
+  }
+  
+  .team-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem; /* Consistent spacing below sub-headings */
+  }
+  
+  .team-member {
+    padding: 1rem;
+    background-color: #f0f4f8;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center; /* Center-align the content for consistency */
+    height: 300px; /* Example fixed height, adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .member-name,
+.member-role {
+  min-height: 20px; /* Adjust as necessary */
+  overflow: hidden;
+}
+
+  
+  .team-member img {
+    display: block; /* Allows margin to be applied */
+    margin: 0 auto; /* Centers the image */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .member-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .member-role {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+  }
+
+  .team-member {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits the color from parent for consistency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .team-member:hover, .team-member:focus {
+    transform: translateY(-5px); /* Moves the card up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds a shadow effect on hover */
+  }
+  
+
+  
+  /* Ensure footer has no extra padding or margin */
+  .footer {
+    padding: 1rem 0;
+    margin-top: 0; /* Adjust if there is unexpected space */
+  }
+  
+  /* Adjustments for responsive behavior */
+  @media (max-width: 768px) {
+    .team-member img {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .team-heading {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .team-member {
+      width: 100%; /* Ensure full-width on extra small devices */
+    }
+  }
+  
+  
+  /* More space between sections */
+.about-section {
+    padding-bottom: 4rem; /* Increased padding at the bottom of the about section */
+  }
+  
+  /* Ensure the space between content and team sections is maintained on smaller screens */
+  @media (max-width: 768px) {
+    .about-section {
+      padding-bottom: 2rem; /* Adjust padding for smaller screens */
+    }
+  }
+
+  /* Hover effect for list items */
+  .team-list li:hover {
+    color: #007bff; /* Bootstrap primary color for hover state */
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .feature h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+
+  /* Subtle animation for when the page loads */
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 20px, 0);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to each section */
+  .section-title, .section-intro, .feature, .team-section {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  /* Smooth scroll effect for all anchor tags */
+  a {
+    transition: color 0.3s ease;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color for link hover state */
+  }
+    /* Footer css */
+
+.footer-section {
+    background-color: #000; /* If you have a black footer */
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 0;
+    }
+      
+.footer-section p {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 0; /* If you don't want space between lines */
+    line-height: 1.5; /* If you want a bit of space between lines */
+    }
+      
+  

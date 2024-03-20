@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eMindGuard</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="contact.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">eMindGuard</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="works.html">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="contact-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Contact Us</h2>
+      <p class="text-center mb-4">Questions, bug reports, feedback, feature requests — we're here for it all. Already use eMindGuard? <a href="#">Download</a> the app so we can tailor your experience. If that’s not possible, we'd still like to hear from you.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="process-form.php" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" placeholder="How can we help?" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+<footer class="footer-section">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <p>eMindGuard</p>
+        </div>
+        <div class="col-auto">
+          <p>123-456-0000<br>info@emindguard.com</p>
+        </div>
+        <div class="col-auto">
+          <p>200 S Wacker Dr,<br>20th Floor, Chicago,<br>IL 60606</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
