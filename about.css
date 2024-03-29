@@ -41,6 +41,13 @@ body {
     color: #AAA; /* Light gray for hover, adjust as needed */
 }
  
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0);
+}
  
   
 
@@ -273,4 +280,24 @@ body {
     line-height: 1.5; /* If you want a bit of space between lines */
     }
       
-  
+  /* ... your existing styles ... */
+
+
+ /* Vertical Divider */
+.vertical-divider {
+  border-left: 2px solid #ddd;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+}
+
+/* Adjustments for responsive behavior */
+@media (max-width: 991px) {
+  .vertical-divider {
+    display: none; /* Hide the divider on medium screens and below */
+  }
+}
+
+/* Additional responsive adjustments may be necessary */

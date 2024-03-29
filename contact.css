@@ -39,6 +39,14 @@ body {
 .navbar .navbar-nav .nav-link:hover {
     color: #AAA; /* Light gray for hover, adjust as needed */
 }
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0);
+}
  
 
   .contact-section {

@@ -38,14 +38,14 @@ body {
 .navbar .navbar-nav .nav-link:hover {
     color: #AAA; /* Light gray for hover, adjust as needed */
 }
- 
+
+
 
 /* About Page Styles */
 /* Additional Global Styles */
 
 /* Base styles for the about page */
 .about-section {
-    background-color: #f0f4f8;
     padding: 4rem 0;
   }
   
@@ -91,60 +91,6 @@ body {
     margin-bottom: 50px;
   }
   
-
-
-/* Continuing from the previous CSS */
-
-.team-section {
-    background-color: #f0f4f8;
-    color: #333;
-    padding-bottom: 0; /* Removes extra space at the bottom */
-    overflow: hidden;
-  }
-  
-  .team-section h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem; /* Adjust as needed */
-  }
-  
-  .team-heading {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    color: #333;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1rem; /* Consistent spacing below sub-headings */
-  }
-  
-  .team-member {
-    padding: 1rem;
-    background-color: #f0f4f8;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center; /* Center-align the content for consistency */
-  }
-  
-  .team-member img {
-    display: block; /* Allows margin to be applied */
-    margin: 0 auto; /* Centers the image */
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  .member-name {
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-  
-  .member-role {
-    font-size: 1rem;
-    color: #666;
-    font-style: italic;
-  }
   
   /* Ensure footer has no extra padding or margin */
   .footer {
@@ -245,3 +191,149 @@ body {
     line-height: 1.5; /* If you want a bit of space between lines */
     }
       
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #333;
+      background: #ffffff;
+    }
+    
+    .navbar {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section-title {
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    
+    .how-it-works-section h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #30475e;
+    }
+    
+    .how-it-works-section h4 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #f05454;
+      margin-top: 2rem;
+    }
+    
+    .how-it-works-section p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-top: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      .how-it-works-section h2 {
+        font-size: 1.8rem;
+      }
+      
+      .how-it-works-section h4 {
+        font-size: 1.3rem;
+      }
+      
+      .how-it-works-section p {
+        font-size: 0.9rem;
+      }
+      
+      .how-it-works-section img {
+        margin-top: 2rem;
+      }
+    }
+    
+
+    /* Custom bullet points with styled arrows */
+.how-it-works-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.how-it-works-section ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+}
+
+.how-it-works-section ul li::before {
+  content: '➔'; /* Styled arrow symbol */
+  font-size: 20px; /* Size of the bullet */
+  color: #f05454; /* Color of the bullet */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.how-it-works-section ul li:hover::before {
+  transform: translateY(-50%) translateX(5px); /* Moves the arrow to the right on hover */
+}
+
+/* Ensure the bullets are not animated when printing the page */
+@media print {
+  .how-it-works-section ul li::before {
+    content: '•'; /* Regular bullet symbol */
+    transform: none;
+    transition: none;
+  }
+}
+
+.process-image {
+  transform: translateY(20px); /* Adjust the value as needed */
+  max-width: 400px;
+  margin-left: 100px;
+}
+
+
+.user-journey-description {
+  font-family: 'Raleway', sans-serif; /* Stylish font */
+  font-size: 1.1rem; /* Adjust font size for legibility */
+  line-height: 1.7; /* Space between lines */
+  color: #333; /* Dark color for text for readability */
+  background: #f8f9fa; /* Light background color */
+  border-left: 4px solid #5cb85c; /* Green border on the left for emphasis */
+  padding: 1rem; /* Padding inside the description box */
+  left: -20px;
+  border-radius: 0.25rem; /* Slightly rounded corners for the description box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: -1rem; /* Position the description closer to the image */
+  position: relative; /* Needed for absolute positioning of pseudo-elements */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .user-journey-description {
+    font-size: 1rem; /* Smaller font size on smaller screens */
+    padding: 0.75rem; /* Smaller padding on smaller screens */
+  }
+
+  .user-journey-description::before {
+    left: -1rem; /* Adjust the position of the decorative shape on smaller screens */
+  }
+}
+
+
+.unique-section .process-image {
+  max-width: 500px; /* Adjust the width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative; /* Set position relative for positioning */
+  top: -60px; /* Moves the image up by 20px */
+  left: -25px;
+}
+
+
+@media (max-width: 768px) {
+  .unique-section .img-fluid {
+    max-width: 100%; /* Allows the image to scale down on smaller devices */
+  }
+}
+
