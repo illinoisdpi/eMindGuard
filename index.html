@@ -144,15 +144,42 @@
     <h2 class="download-tagline">Your Health, Our Priority</h2>
     <h4>Get insights and track your mental wellness journey with eMindGuard.</h4>
     <div class="app-store-buttons">
-      <a href="coming-soon.html" class="app-store-link me-3" target="_blank">
+      <a href="#" class="app-store-link me-3" onclick="showPopup(event)">
         <img src="images/appstore.jpg" alt="Download on the App Store" class="img-fluid">
       </a>
-      <a href="coming-soon.html" class="app-store-link" target="_blank">
+      <a href="#" class="app-store-link" onclick="showPopup(event)">
         <img src="images/playstore.jpg" alt="Get it on Google Play" class="img-fluid">
       </a>
     </div>
   </div>
+  <!-- Pop-up container -->
+  <div id="popup" class="popup-container" style="display:none;">
+    <p class="popup-message">App is under development, Stay tuned!</p>
+  </div>
 </section>
+
+<script>
+function showPopup(event) {
+  event.preventDefault();
+  var popup = document.getElementById('popup');
+  var message = popup.querySelector('.popup-message'); // Get the message element
+  message.innerHTML = 'App is under development,<br>Stay tuned!'; // Set the message with line break
+
+  popup.style.display = 'flex'; // Display the pop-up using flex
+  popup.style.opacity = 1; // Make pop-up fully visible
+  popup.style.top = '20px'; // Initial position from the top
+
+  setTimeout(function() {
+    popup.style.opacity = 0; // Start fading out the pop-up
+    popup.style.top = '10px'; // Move the pop-up up a bit while fading out for effect
+
+    setTimeout(function() {
+      popup.style.display = 'none'; // Hide the pop-up after it fades out
+    }, 600); // This should be slightly longer than the fade out transition
+  }, 5000); // Display time before fade begins
+}
+
+</script>
 
 
 <!-- Footer Section -->

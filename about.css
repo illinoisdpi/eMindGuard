@@ -135,7 +135,7 @@ body {
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center; /* Center-align the content for consistency */
-    height: 300px; /* Example fixed height, adjust as needed */
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,6 +167,14 @@ body {
     color: #666;
     font-style: italic;
   }
+
+  .member-subrole {
+    font-size: 0.85rem; /* Smaller font size */
+    color: #666; /* A slightly lighter color for the sub-role */
+    margin-top: -0.5rem; /* Optional: pulls the subtitle up closer to the title */
+    margin-bottom: 1rem; /* Space below the sub-role */
+  }
+
 
   .team-member {
     text-decoration: none; /* Removes underline from links */

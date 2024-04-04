@@ -40,7 +40,6 @@ body {
 }
 
 
-
 /* About Page Styles */
 /* Additional Global Styles */
 
@@ -326,7 +325,7 @@ body {
   display: block;
   margin: 0 auto;
   position: relative; /* Set position relative for positioning */
-  top: -60px; /* Moves the image up by 20px */
+  top: -35px; /* Moves the image up by 20px */
   left: -25px;
 }
 
