@@ -174,22 +174,42 @@ body {
     text-decoration: none;
     color: #007bff; /* Bootstrap primary color for link hover state */
   }
-    /* Footer css */
+  
+/* Footer css */
 
 .footer-section {
-    background-color: #000; /* If you have a black footer */
-    color: #fff;
-    padding: 2rem 0;
-    margin-top: 0;
-    }
-      
+  background-color: #c4c4c4; /* Light background color */
+  color: #2c2c2c;
+  font-weight: 400;
+  padding: 2rem 0;
+  position: relative; /* Needed for absolute positioning of logos */
+}
+
+.footer-logo {
+  max-width: 100px; /* Adjust as needed */
+  margin-right: 1rem; /* Space between logos */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-logo:hover {
+  opacity: 1; /* Logos stand out on hover */
+}
+
 .footer-section p {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    margin-bottom: 0; /* If you don't want space between lines */
-    line-height: 1.5; /* If you want a bit of space between lines */
-    }
-      
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.logo2 {
+  max-width: 175px; /* Size for logo 2 */
+}
+
+.logo3 {
+  max-width: 200px; /* Size for logo 2 */
+}
+
 
     body {
       font-family: 'Raleway', sans-serif;
@@ -328,6 +348,43 @@ body {
   top: -35px; /* Moves the image up by 20px */
   left: -25px;
 }
+
+.user-journey-section h2 {
+  margin-bottom: 0.5rem; /* Reduces space below the heading */
+}
+
+.user-journey-section p {
+  font-size: 1rem; /* Adjusts the font size for readability */
+  color: #666; /* Dim gray for text to make it less sharp than black */
+  line-height: 1.5; /* Improves readability */
+}
+
+.unique-section .row {
+  align-items: flex-start; /* Align items at the start of the container */
+}
+
+.unique-section h2 {
+  margin-bottom: 10% !important; /* Increase bottom margin to push down content below */
+}
+
+.user-journey-section p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Elegant and readable font */
+  font-size: 1rem; /* Standard font size for accessibility */
+  color: #333; /* Dark gray for better readability */
+  line-height: 1.6; /* Optimized line spacing */
+  background: linear-gradient(145deg, rgb(255, 254, 254), rgb(167, 182, 207)); /* Subtle gradient background */
+  padding: 20px; /* Comfortable padding around the text */
+  border-left: 5px solid #30475e; /* Solid bar on the left for a modern touch */
+  margin: 20px 0; /* Space above and below the paragraph */
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+.user-journey-section h2 {
+  margin-bottom: 5%; /* Existing space below the title */
+}
+
+
 
 
 @media (max-width: 768px) {
