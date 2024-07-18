@@ -202,6 +202,10 @@ body {
   line-height: 1.5;
 }
 
+.logo1 {
+  max-width: 120px;
+}
+
 .logo2 {
   max-width: 200px; /* Size for logo 2 */
 }
@@ -210,9 +214,6 @@ body {
   max-width: 290px; /* Size for logo 2 */
 }
  
-.logo1 {
-  max-width: 120px;
-}
 
 
     body {
