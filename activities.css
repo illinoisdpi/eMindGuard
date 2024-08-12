@@ -1,0 +1,436 @@
+html, body {
+    height: 100%; /* Ensure the html and body fill the height of the viewport */
+    margin: 0; /* Reset default margins */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .content {
+    flex: 1; /* The content will expand to fill available space, pushing the footer down */
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  .footer-section {
+    margin-top: auto; /* Pushes the footer to the bottom */
+  }
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #202024 !important; /* Changed to black */
+}
+
+.navbar .navbar-brand, .navbar .navbar-nav .nav-link {
+    color: #FFF; /* Changed to white */
+}
+
+.navbar-brand {
+    font-size: larger;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #AAA; /* Light gray for hover, adjust as needed */
+}
+
+
+/* About Page Styles */
+/* Additional Global Styles */
+
+/* Base styles for the about page */
+.about-section {
+    padding: 4rem 0;
+  }
+  
+  .section-title {
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .section-intro {
+    text-align: center;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 2rem;
+  }
+
+  .section-title:after {
+    content: '';
+    display: block;
+    border-top: 2px solid #b4b4b4; /* The color of the underline */
+    width: 95%; /* Width of the underline */
+    margin: 0.3rem auto 1rem; /* Top margin, auto for horizontal centering, and bottom margin */
+  }
+  
+  /* Similarly for the team section if you have an h2 tag for the team title */
+  .team-section h2:after {
+    content: '';
+    display: block;
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin: 0.3rem auto 1rem;
+    margin-bottom: 50px;
+  }
+  
+  
+  /* Ensure footer has no extra padding or margin */
+  .footer {
+    padding: 1rem 0;
+    margin-top: 0; /* Adjust if there is unexpected space */
+  }
+  
+  /* Adjustments for responsive behavior */
+  @media (max-width: 768px) {
+    .team-member img {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .team-heading {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .team-member {
+      width: 100%; /* Ensure full-width on extra small devices */
+    }
+  }
+  
+  
+  /* More space between sections */
+.about-section {
+    padding-bottom: 4rem; /* Increased padding at the bottom of the about section */
+  }
+  
+  /* Ensure the space between content and team sections is maintained on smaller screens */
+  @media (max-width: 768px) {
+    .about-section {
+      padding-bottom: 2rem; /* Adjust padding for smaller screens */
+    }
+  }
+
+  /* Hover effect for list items */
+  .team-list li:hover {
+    color: #007bff; /* Bootstrap primary color for hover state */
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .feature h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+
+  /* Subtle animation for when the page loads */
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 20px, 0);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to each section */
+  .section-title, .section-intro, .feature, .team-section {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  /* Smooth scroll effect for all anchor tags */
+  a {
+    transition: color 0.3s ease;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color for link hover state */
+  }
+  
+/* Footer css */
+
+.footer-section {
+  background-color: #c4c4c4; /* Light background color */
+  color: #2c2c2c;
+  font-weight: 400;
+  padding: 2rem 0;
+  position: relative; /* Needed for absolute positioning of logos */
+}
+
+.footer-logo {
+  max-width: 100px; /* Adjust as needed */
+  margin-right: 1rem; /* Space between logos */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-logo:hover {
+  opacity: 1; /* Logos stand out on hover */
+}
+
+.footer-section p {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.logo1 {
+  max-width: 120px;
+}
+
+.logo2 {
+  max-width: 200px; /* Size for logo 2 */
+}
+
+.logo3 {
+  max-width: 290px; /* Size for logo 2 */
+}
+ 
+
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      color: #333;
+      background: #ffffff;
+    }
+    
+    .navbar {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section-title {
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    
+    .how-it-works-section h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #30475e;
+    }
+    
+    .how-it-works-section h4 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #f05454;
+      margin-top: 2rem;
+    }
+    
+    .how-it-works-section p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-top: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      .how-it-works-section h2 {
+        font-size: 1.8rem;
+      }
+      
+      .how-it-works-section h4 {
+        font-size: 1.3rem;
+      }
+      
+      .how-it-works-section p {
+        font-size: 0.9rem;
+      }
+      
+      .how-it-works-section img {
+        margin-top: 2rem;
+      }
+    }
+    
+
+    /* Custom bullet points with styled arrows */
+.how-it-works-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.how-it-works-section ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+}
+
+.how-it-works-section ul li::before {
+  content: '➔'; /* Styled arrow symbol */
+  font-size: 20px; /* Size of the bullet */
+  color: #f05454; /* Color of the bullet */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.how-it-works-section ul li:hover::before {
+  transform: translateY(-50%) translateX(5px); /* Moves the arrow to the right on hover */
+}
+
+/* Ensure the bullets are not animated when printing the page */
+@media print {
+  .how-it-works-section ul li::before {
+    content: '•'; /* Regular bullet symbol */
+    transform: none;
+    transition: none;
+  }
+}
+
+.process-image {
+  transform: translateY(20px); /* Adjust the value as needed */
+  max-width: 400px;
+  margin-left: 100px;
+}
+
+
+.user-journey-description {
+  font-family: 'Raleway', sans-serif; /* Stylish font */
+  font-size: 1.1rem; /* Adjust font size for legibility */
+  line-height: 1.7; /* Space between lines */
+  color: #333; /* Dark color for text for readability */
+  background: #f8f9fa; /* Light background color */
+  border-left: 4px solid #5cb85c; /* Green border on the left for emphasis */
+  padding: 1rem; /* Padding inside the description box */
+  left: -20px;
+  border-radius: 0.25rem; /* Slightly rounded corners for the description box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: -1rem; /* Position the description closer to the image */
+  position: relative; /* Needed for absolute positioning of pseudo-elements */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .user-journey-description {
+    font-size: 1rem; /* Smaller font size on smaller screens */
+    padding: 0.75rem; /* Smaller padding on smaller screens */
+  }
+
+  .user-journey-description::before {
+    left: -1rem; /* Adjust the position of the decorative shape on smaller screens */
+  }
+}
+
+
+.unique-section .process-image {
+  max-width: 500px; /* Adjust the width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative; /* Set position relative for positioning */
+  top: -35px; /* Moves the image up by 20px */
+  left: -25px;
+}
+
+.user-journey-section h2 {
+  margin-bottom: 0.5rem; /* Reduces space below the heading */
+}
+
+.user-journey-section p {
+  font-size: 1rem; /* Adjusts the font size for readability */
+  color: #666; /* Dim gray for text to make it less sharp than black */
+  line-height: 1.5; /* Improves readability */
+}
+
+.unique-section .row {
+  align-items: flex-start; /* Align items at the start of the container */
+}
+
+.unique-section h2 {
+  margin-bottom: 10% !important; /* Increase bottom margin to push down content below */
+}
+
+.user-journey-section p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Elegant and readable font */
+  font-size: 1rem; /* Standard font size for accessibility */
+  color: #333; /* Dark gray for better readability */
+  line-height: 1.6; /* Optimized line spacing */
+  background: linear-gradient(145deg, rgb(255, 254, 254), rgb(167, 182, 207)); /* Subtle gradient background */
+  padding: 20px; /* Comfortable padding around the text */
+  border-left: 5px solid #30475e; /* Solid bar on the left for a modern touch */
+  margin: 20px 0; /* Space above and below the paragraph */
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  border-radius: 5px; /* Slightly rounded corners */
+}
+
+.user-journey-section h2 {
+  margin-bottom: 5%; /* Existing space below the title */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .unique-section .img-fluid {
+    max-width: 100%; /* Allows the image to scale down on smaller devices */
+  }
+}
+
+
+
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
