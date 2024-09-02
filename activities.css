@@ -434,3 +434,8 @@ th {
 .button:hover {
     background-color: #45a049;
 }
+
+table th.no-border,
+table td.no-border {
+    border: none;
+}
