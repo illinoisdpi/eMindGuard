@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Mental Health Score Predictor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Score Predictor</h1>
+        <form id="predictForm" onsubmit="return false;">
+            <p class="note">* Enter values between 0 and 100 for each field.</p>
+
+            <label for="socioEconomic">Socioeconomic Status:</label>
+            <input type="number" id="socioEconomic" min="0" max="100" step="1" placeholder="Socioeconomic Status" required>
+
+            <label for="household">Housing:</label>
+            <input type="number" id="household" min="0" max="100" step="1" placeholder="Household Composition" required>
+
+            <label for="behavioral">Behavioral Health Risks:</label>
+            <input type="number" id="behavioral" min="0" max="100" step="1" placeholder="Behavioral Health Risks" required>
+
+            <label for="chronic">Chronic Health Conditions:</label>
+            <input type="number" id="chronic" min="0" max="100" step="1" placeholder="Chronic Health Conditions" required>
+
+            <label for="wellBeing">General Health and Well-being:</label>
+            <input type="number" id="wellBeing" min="0" max="100" step="1" placeholder="General Well-being" required>
+
+            <button id="predict-button" type="button">Predict</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
