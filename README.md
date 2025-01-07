@@ -85,7 +85,7 @@ MentalHealthScorePredictor/
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/tej-kodur/Mental-Health-Score-Predictor.git
+   git clone [https://github.com/tej-kodur/Mental-Health-Score-Predictor.git](https://github.com/illinoisdpi/eMindGuard.git)
    cd Mental-Health-Score-Predictor
    ```
 2. **Create a Virtual Environment**  
